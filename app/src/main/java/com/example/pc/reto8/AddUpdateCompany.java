@@ -56,7 +56,7 @@ public class AddUpdateCompany  extends AppCompatActivity {
         mode = getIntent().getStringExtra(EXTRA_ADD_UPDATE);
         if(mode.equals("Update")){
 
-            addUpdateButton.setText("Update Empresa");
+            addUpdateButton.setText("Actualizar Empresa");
             empId = getIntent().getLongExtra(EXTRA_EMP_ID,0);
 
             initializeCompany(empId);
@@ -101,7 +101,7 @@ public class AddUpdateCompany  extends AppCompatActivity {
                     newEmpresa.setProductosYServicios(productsEditText.getText().toString());
                     newEmpresa.setUrl(websiteEditText.getText().toString());
                     employeeData.addCompany(newEmpresa);
-                    Toast t = Toast.makeText(AddUpdateCompany.this, "Empresa "+ newEmpresa.getNombre() + "has been added successfully !", Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(AddUpdateCompany.this, "La empresa "+ newEmpresa.getNombre() + " se ha añadido", Toast.LENGTH_SHORT);
                     t.show();
                     Intent i = new Intent(AddUpdateCompany.this,MainActivity.class);
                     startActivity(i);
@@ -112,7 +112,7 @@ public class AddUpdateCompany  extends AppCompatActivity {
                     oldEmpresa.setProductosYServicios(productsEditText.getText().toString());
                     oldEmpresa.setUrl(websiteEditText.getText().toString());
                     employeeData.updateCompany(oldEmpresa);
-                    Toast t = Toast.makeText(AddUpdateCompany.this, "Empresa "+ oldEmpresa.getNombre() + " has been updated successfully !", Toast.LENGTH_SHORT);
+                    Toast t = Toast.makeText(AddUpdateCompany.this, "La empresa "+ oldEmpresa.getNombre() + " se ha actualizado", Toast.LENGTH_SHORT);
                     t.show();
                     Intent i = new Intent(AddUpdateCompany.this,viewCompany.class);
                     startActivity(i);

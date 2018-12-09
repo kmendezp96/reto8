@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         // set dialog message
         alertDialogBuilder
                 .setCancelable(true)
-                .setPositiveButton("OK",new DialogInterface.OnClickListener() {
+                .setPositiveButton("Si",new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog,int id) {
                         // get user input and set it to result
                         // edit text
@@ -103,13 +103,13 @@ public class MainActivity extends AppCompatActivity {
                         alertDialogBuilder2.setView(getEmpIdView);
                         alertDialogBuilder2
                                 .setCancelable(true)
-                                .setPositiveButton("Delete",new DialogInterface.OnClickListener() {
+                                .setPositiveButton("Borrar",new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog,int id) {
                                         // get user input and set it to result
                                         // edit text
                                         companyOps = new CompanyOperations(MainActivity.this);
                                         companyOps.removeCompany(companyOps.getCompany(Long.parseLong(delete_id)));
-                                        Toast t = Toast.makeText(MainActivity.this,"Empresa removed successfully!",Toast.LENGTH_SHORT);
+                                        Toast t = Toast.makeText(MainActivity.this,"Empresa eliminada",Toast.LENGTH_SHORT);
                                         t.show();
                                     }
                                 }).create()

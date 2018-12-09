@@ -65,7 +65,7 @@ public class viewCompany extends AppCompatActivity {
         editCompanyButton = (Button)findViewById(R.id.button_add_update_employee);
         employeeData = new CompanyOperations(this);
         employeeData.open();
-        editCompanyButton.setText("Edit Empresa");
+        editCompanyButton.setText("Actualizar Empresa");
         empId = mPrefs.getLong("company_id", 0);
         initializeCompany(empId);
 
