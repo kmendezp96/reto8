@@ -95,33 +95,34 @@ public class ViewAllCompanies extends AppCompatActivity {
         companyOps.close();
         if(companies.size() > 0) {
             for (Empresa comp : companies) {
-                list.add(comp.getEmpresaId() + ". " + comp.getNombre());
+                list.add(comp.getEmpresaId() + "- N: "
+                        + comp.getNombre()+ " T: " +comp.getClasificacion());
             }
         }
-            adapter = new StableArrayAdapter(this,
-                    R.xml.company_item, R.id.firstLine, list);
-            listview.setAdapter(adapter);
+        adapter = new StableArrayAdapter(this,
+                R.xml.company_item, R.id.firstLine, list);
+        listview.setAdapter(adapter);
 
-            listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-                @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
-                @Override
-                public void onItemClick(AdapterView<?> parent, final View view,
-                                        int position, long id) {
-                    final String item = (String) parent.getItemAtPosition(position);
-                    if (item != null) {
-                        String[] parts = item.split("\\."); // String array, each element is text between dots
-                        String beforeFirstDot = parts[0];    // Text before the first dot
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+            @Override
+            public void onItemClick(AdapterView<?> parent, final View view,
+                                    int position, long id) {
+                final String item = (String) parent.getItemAtPosition(position);
+                if (item != null) {
+                    String[] parts = item.split("\\-"); // String array, each element is text between dots
+                    String beforeFirstDot = parts[0];    // Text before the first dot
 
-                        SharedPreferences.Editor ed = mPrefs.edit();
-                        ed.putLong("company_id", Long.valueOf(beforeFirstDot));
-                        ed.commit();
-                        startActivityForResult(new Intent(ViewAllCompanies.this, viewCompany.class), 0);
-                        list.clear();
-                    }
+                    SharedPreferences.Editor ed = mPrefs.edit();
+                    ed.putLong("company_id", Long.valueOf(beforeFirstDot));
+                    ed.commit();
+                    startActivityForResult(new Intent(ViewAllCompanies.this, viewCompany.class), 0);
+                    list.clear();
                 }
+            }
 
-            });
+        });
 
     }
     private class StableArrayAdapter extends ArrayAdapter<String> {

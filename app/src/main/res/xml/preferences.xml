@@ -5,11 +5,11 @@
     <EditTextPreference
         android:key="filter_by_name"
         android:summary=""
-        android:title="Filter by Name"  />
+        android:title="Filtrar por nombre"  />
 
     <ListPreference
         android:key="filter_by_type"
-        android:title="Filter by Type"
+        android:title="Filtrar por tipo"
         android:summary=""
         android:defaultValue="@string/filter_by_type_none"
         android:entries="@array/list_filter_by_type"

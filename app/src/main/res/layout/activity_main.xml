@@ -19,6 +19,13 @@
         android:textStyle="bold"
         android:gravity="clip_horizontal" />
     <Button
+        android:id="@+id/button_view_companys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_all_companys"
+        />
+    
+    <Button
         android:id="@+id/button_add_company"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,12 +37,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/remove_company"
-        />
-
-    <Button
-        android:id="@+id/button_view_companys"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/view_all_companys"
         />
 </LinearLayout>

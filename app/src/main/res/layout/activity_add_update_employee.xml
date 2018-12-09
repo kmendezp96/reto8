@@ -27,6 +27,20 @@
         android:hint="@string/add_first_name"
         android:padding="@dimen/view_padding"
         android:textSize="@dimen/add_edit_textsize"/>
+
+    <EditText
+        android:id="@+id/edit_text_website"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/string_webPage"
+        />
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:hint="@string/add_phone"
+        android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_height="match_parent"
+        android:gravity="left" />
     <EditText
         android:id="@+id/edit_text_email"
         android:layout_width="match_parent"
@@ -34,6 +48,19 @@
         android:hint="@string/add_email"
         android:padding="@dimen/view_padding"
         android:textSize="@dimen/add_edit_textsize"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/view_padding">
+
+        <EditText
+            android:id="@+id/edit_text_products"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/productosYServicios" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -82,33 +109,7 @@
         </RadioGroup>
 
     </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/view_padding">
 
-        <EditText
-            android:id="@+id/edit_text_phone"
-            android:hint="@string/add_phone"
-            android:layout_width="match_parent"
-            android:layout_weight="8"
-            android:layout_height="match_parent"
-            android:gravity="left" />
-
-        <EditText
-            android:id="@+id/edit_text_website"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="@string/string_webPage"
-            />
-
-        <EditText
-            android:id="@+id/edit_text_products"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:hint="@string/productosYServicios" />
-    </LinearLayout>
 
     <Button
         android:id="@+id/button_add_update_employee"
