@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Gestión de Empresas</string>
+    <string name="choose_menu">¿Que Acción desea realizar?</string>
+    <string name="add_company">Añadir una empresa</string>
+    <string name="update_company">Actualizar una empresa</string>
+    <string name="remove_company">Borrar empresa</string>
+    <string name="view_all_companys">Ver lista de empresa</string>
+    <string name="enter_employee_id">Id</string>
+    <string name="add_first_name">Nombre de la empresa</string>
+    <string name="add_employee">Añadir Empresa</string>
+    <string name="string_webPage">URL</string>
+    <string name="add_email">Correo electronico</string>
+    <string name="productosYServicios">Productos y servicios</string>
+    <string name="string_type_1">Consultoria</string>
+    <string name="string_type_2">Desarrollo a la medida</string>
+    <string name="string_type_3">Fabrica de software</string>
+    <string name="add_phone">Numero de telefono</string>
+
+</resources>

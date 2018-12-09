@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pc.reto8.viewCompany">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nombre:"
+                android:textSize="@dimen/add_edit_textsize" />
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_first_name"
+                android:padding="@dimen/view_padding"
+                android:textSize="@dimen/add_edit_textsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="URL:"
+                android:textSize="@dimen/add_edit_textsize"/>
+
+            <EditText
+                android:id="@+id/edit_text_website"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/string_webPage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Telefono:"
+                android:textSize="@dimen/add_edit_textsize"/>
+
+            <EditText
+                android:id="@+id/edit_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/add_phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Correo:"
+                android:textSize="@dimen/add_edit_textsize"/>
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_email"
+                android:padding="@dimen/view_padding"
+                android:textSize="@dimen/add_edit_textsize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/view_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Productos y servicios:"
+                    android:textSize="@dimen/add_edit_textsize"/>
+
+                <EditText
+                    android:id="@+id/edit_text_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Productos y servicios" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Clasificación:"
+                android:textSize="@dimen/add_edit_textsize"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/view_padding">
+
+                <TextView
+                    android:id="@+id/text_view_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:textSize="@dimen/add_edit_textsize" />
+
+                <RadioGroup
+                    android:id="@+id/radio_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="25dp">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/string_type_1"
+                        android:textSize="@dimen/add_edit_textsize" />
+
+                    <RadioButton
+                        android:id="@+id/radio_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_type_2"
+                        android:textSize="@dimen/add_edit_textsize" />
+
+                    <RadioButton
+                        android:id="@+id/radio_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string_type_3"
+                        android:textSize="@dimen/add_edit_textsize" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/button_add_update_employee"
+                android:layout_width="200dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/button_padding"
+                android:background="@android:color/holo_green_light"
+                android:text="Edit Company"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

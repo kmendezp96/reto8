@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="list_filter_by_type">
+        <item>@string/filter_by_type_none</item>
+        <item>@string/filter_by_type_1</item>
+        <item>@string/filter_by_type_2</item>
+        <item>@string/filter_by_type_3</item>
+    </string-array>
+
+    <string name="filter_by_type_none">Not filter</string>
+    <string name="filter_by_type_1">Consultoria</string>
+    <string name="filter_by_type_2">Desarrollo a la medida</string>
+    <string name="filter_by_type_3">Fabrica de software</string>
+</resources>

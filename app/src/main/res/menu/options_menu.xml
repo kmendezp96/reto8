@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter"
+        android:title="Filter Company list"
+        />
+    <item
+        android:id="@+id/clear_fiter"
+        android:title="Clear Filters"
+        />
+</menu>
